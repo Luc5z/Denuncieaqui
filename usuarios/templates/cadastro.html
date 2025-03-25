@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'usuarios/css/cadastro.css' %}">
+{% endblock 'head' %}
+{% block 'body' %}
+
+<div id="img"></div>
+<div class="cadastro-container">
+    <div>
+        <div class="header">
+            <div id="logo"></div>
+            <span id="titulo"><span class="denuncie">DENUNCIE</span><span class="aqui">AQUI</span></span>
+        </div>
+    </div>
+    <form action="{% url 'usuarios:cadastro' %}" method="POST">
+        {% csrf_token %}
+                        
+        <h2 class="fonte-destaque1"></h2>
+        <br>
+        
+        {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <section class="alert alert-danger">
+                    {{ message }}
+                </section>
+            {% else %}
+                <section class="alert alert-success">
+                    {{ message }}
+                </section>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+        
+        <div class="row">
+            <div class="col-md">
+                <label for="id_nome">Nome</label>
+                <input type="text" name="nome" id="id_nome" class="form-control" placeholder="Seu nome" required>
+            </div>
+            <div class="col-md">
+                <label for="id_sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="id_sobrenome" class="form-control" placeholder="Seu sobrenome" required>
+            </div>
+        </div>
+        <br>
+        <label for="id_email">E-mail</label>
+        <input type="email" name="email" id="id_email" placeholder="example@email.com" class="form-control" required>
+        <br>
+        <label for="id_cpf">CPF</label>
+        <input type="text" name="cpf" id="id_cpf" class="form-control" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+        <br>
+        <div class="row">
+            <div class="col-md">
+                <label for="id_senha">Senha</label>
+                <input type="password" name="senha" id="id_senha" class="form-control" placeholder="Digite sua senha ..." minlength="6" required>
+            </div>
+            <div class="col-md">
+                <label for="id_confirmar_senha">Confirmar senha</label>
+                <input type="password" name="confirmar_senha" id="id_confirmar_senha" class="form-control" placeholder="Digite sua senha novamente ..." minlength="6" required>
+            </div>
+        </div>
+        <br>
+    
+        <input type="submit" value="Cadastrar" class="btn btn-success btn-dark-color" id="id_submit">
+        <a href="{% url 'usuarios:login' %}" class="btn btn-dark-color-outline" style="border: 1px #000;">Já possuo uma conta</a>
+
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+{% endblock 'body' %}

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+/* Conf geral da fonte */
+html, body{
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+}
+.active{
+    background-color: #4FB288;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0.5em;
+    text-decoration: none;
+    padding: 0.5em;
+}
+footer{
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo Header */
+.contair-header {
+    display: flex;
+    flex-direction: row;
+    gap: 60em;
+    align-items: center;
+    justify-content: center;
+}
+.contair-texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.denuncie-texto{
+    color: #4FB288;
+    font-weight: 400;
+    margin-left: -0.5em;
+}
+.aqui-texto{
+    color: #20E74C;
+    font-weight: 900;
+}
+.button-menu-lateral{
+    height: 2em;
+    border: none;
+    background-color: transparent;
+    margin-right: 2em;
+}
+
+header hr{
+    border: 1px solid #2E2E2E;
+    width: 80em;
+}
+.menu-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-left: 2em;
+}
+.link-menu-principal{
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    padding: 0.5em;
+}
+.link-menu-principal:hover{
+    background-color: #4FB288;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 0.5em;
+}
+
+
+/* Estilo do Main */
+.section-sobre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15em;
+}
+.container-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.6em;
+  margin-left: 3.5em;
+}
+.divider-titulo {
+  border: 1px solid #000000;
+  width: 30em;
+}
+.divider-topico {
+  border: 1.2px solid #a1a1a1;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  width: 60em;
+  margin: auto;
+}
+.section-encontrou{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6em;
+    padding: 2em;
+}
+.section-encontrou h2{
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+.denuncie-ja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: 800;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    margin-top: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    height: 2.1em;
+    width: 15em;
+    border-radius: 0.2em;
+}
+#zonas{
+    margin-left: 4.3em;
+}
+.container-encontrou-texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 190px;
+    font-size: 30px;
+}
+.section-duvidas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15em;
+}
+.container-duvida {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.4em;
+  margin-right: 3.5em;
+  text-align: right;
+}
+.divider-titulo-duvida {
+  border: 1px solid #2e2e2e;
+  width: 25em;
+}
+.button-verde-limao {
+  text-decoration: none;
+  font-weight: 400;
+  background-color: #0bee3d;
+  color: #ffffff;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-weight: 700;
+  box-shadow: 2.5px 2.5px #212121;
+}
+.button-cadastro {
+  text-decoration: none;
+  font-weight: 400;
+  background-color: #129960;
+  color: #ffffff;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-weight: 700;
+  box-shadow: 2.5px 2.5px #212121;
+}
+.button-verde-limao:hover {
+  background-color: #28ff65;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+.button-verde-limao:focus {
+  background-color: #41af0e;
+  text-decoration: none;
+}
+.button-cadastro:hover {
+  background-color: #289d97;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+.button-cadastro:focus {
+  background-color: #066679;
+  text-decoration: none;
+}
+.svg-footer {
+  width: 100%;
+  height: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  border-radius: 3em;
+  border: none;
+  color: #ffff;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 4em;
+  width: 4em;
+  margin-top: 17.5em;
+}
+.carousel-control-prev {
+  margin-left: 1.5em;
+}
+.carousel-control-next {
+  margin-right: 1.5em;
+}

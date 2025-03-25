@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'geral/css/redirecionamento.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="title">Calma lá!</h1>
+            <p class="text">Antes de poder utilizar de nossa plataforma, por favor, <strong>Realize o seu Cadastro.</strong> Caso já possua uma conta, por favor, <strong>Conecte-se</strong> e usufrua de todas as abas que desejar!</p>
+            <div class="button-container">
+                <a href="{% url 'usuarios:cadastro' %}" class="button1"><h1><strong>Cadastre-se</h1></strong></a>
+                <a href="{% url 'usuarios:login' %}" class="button2"><h1><strong>Entre</h1></strong></a>
+            </div>
+        </div>
+        <div class="box image-box">
+        </div>
+    </div>
+</body>
+</html>

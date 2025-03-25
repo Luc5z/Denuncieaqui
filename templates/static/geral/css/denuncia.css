@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+/* Conf geral da fonte */
+html, body{
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+}
+.active{
+    background-color: #4FB288;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0.5em;
+    text-decoration: none;
+    padding: 0.5em;
+}
+footer{
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo Header */
+.contair-header {
+    display: flex;
+    flex-direction: row;
+    gap: 60em;
+    align-items: center;
+    justify-content: center;
+}
+.contair-texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.denuncie-texto{
+    color: #4FB288;
+    font-weight: 400;
+    margin-left: -0.5em;
+}
+.aqui-texto{
+    color: #20E74C;
+    font-weight: 900;
+}
+.button-menu-lateral{
+    height: 2em;
+    border: none;
+    background-color: transparent;
+    margin-right: 2em;
+}
+
+header hr{
+    border: 1px solid #2E2E2E;
+    width: 80em;
+}
+.menu-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-left: 2em;
+}
+.link-menu-principal{
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    padding: 0.5em;
+}
+.link-menu-principal:hover{
+    background-color: #4FB288;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 0.5em;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 80px;
+    background-image: url('../img/verde.png');
+    background-size: cover;
+    background-position: ;
+}
+.contair-form {
+    width: 500px;
+    margin-right: 20px;
+}
+.contair-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contair-image img {
+    max-width: 100%;
+    height: auto;
+}
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    background-color: #20E74C;
+    color: white;
+    padding: 15px 65px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
