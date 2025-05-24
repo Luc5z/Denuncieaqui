@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#img {
+    flex: 0 0 50%;
+    background-image: url('../img/arvore.jpeg');
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+}
+
+.cadastro-container {
+    flex: 0 0 50%;
+    height: 100%; /* Adicionado para ocupar a altura total */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-image: url('../img/verdi.png');
+    background-image: url('../img/verdi.png');
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: top;
+}
+.header {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+#logo {
+    background-image: url('../img/Denuncieaqui.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px; /* Ajuste para o tamanho desejado */
+    height: 100px; /* Ajuste para o tamanho desejado */
+}
+
+#titulo {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #4CAF50; /* Cor do texto */
+    margin-left: 10px; /* Espaço à esquerda do texto */
+    font-family: Arial, sans-serif;
+}
+
+
+#titulo {
+    font-size: 50px; /* Tamanho da fonte */
+    color: #4CAF50; /* Cor do texto */
+    margin-left: 10px; /* Espaço à esquerda do texto */
+    
+}
+
+.denuncie {
+    color: #5ead93; /* Cor do texto para "Denuncie" */
+}
+
+.aqui {
+    color: #56e016; /* Cor do texto para "Aqui" */
+    font-weight: bold;
+}
+.cadastro-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px; /* Aumenta a largura */
+    height: 40px; /* Aumenta a altura */
+    background-color: #f2f2f2; /* Cor de fundo dos campos de entrada */
+    border-width: 1px; /* Espessura da borda dos campos de entrada */
+    font-family: Arial, sans-serif;
+}
+#id_email, #id_cpf {
+    width: 625px; /* Largura maior */
+}
+#id_submit{
+    padding: 10px 20px;
+    background-color: #17d650; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Borda arredondada do botão */
+    box-shadow: 2.5px 2.5px #212121; /* Sombra do botão */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#id_submit:hover{
+    background-color: #35701e;
+}

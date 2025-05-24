@@ -1,0 +1,74 @@
+body{
+    background-image: url('../img/verde.png');
+    background-size: 800px; /* Defina o tamanho desejado para a imagem */
+    background-position: right top; /* Posicione a imagem no canto inferior direito */
+    background-repeat: no-repeat;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial; /* Define a fonte para Arial */
+}
+.box {
+    width: 780px;
+    height: 580px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    margin: 10px;
+    padding: 20px 100px; /* Aumenta o tamanho dos botões */
+    font-size: 40px; /* Aumenta o tamanho da fonte dos botões */
+    background-color: #1fd32e;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.image-box {
+    background-image: url("../img/redirecionamento.png");
+    background-size: cover;
+    background-position: center;
+    background-size: 96%; /* Ajusta o tamanho da imagem para 50% do original */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+.title {
+    text-align: left;
+    width: 100%;
+    font-size: 60px; /* Aumenta o tamanho da fonte do título */
+}
+.text {
+    text-align: justify;
+    width: 100%;
+    font-size: 40px; /* Aumenta o tamanho da fonte do título */
+}
+.button1, .button2{
+    margin: 10px;
+    padding: 10px 80px;
+    background-color: #15d625; /* Cor de fundo do botão 1 */
+    color: #ffffff; /* Cor do texto do botão 1 */
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao botão 1 */
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #1d8513; /* Cor de fundo do botão 2 */
+}
+
+.button-container a:hover {
+    background-color: #2c5c1a; /* Cor de fundo do botão quando o mouse está sobre ele */
+}

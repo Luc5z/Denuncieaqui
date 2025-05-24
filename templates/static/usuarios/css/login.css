@@ -1,0 +1,139 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url('../img/folhabackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+form{
+    background-image: url('../img/verde.png');
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    width: 40vw; /* Define o container para preencher metade da largura da viewport */
+    height: 100vh; /* Define a altura para preencher a altura da viewport */
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+}
+form img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 205px;
+    border-radius: 5px;
+    }
+
+form #Login  {
+    margin-top: 20px; /* Adiciona uma margem no topo do primeiro campo de entrada */
+}
+
+.botao-entrar{
+    background-color: #17d650; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Borda arredondada do botão */
+    box-shadow: 2.5px 2.5px #212121;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.botao-criar{
+    padding: 10px 20px;
+    background-color: #47aa74; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Borda arredondada do botão */
+    box-shadow: 2.5px 2.5px #212121;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+form a:hover, .botao-entrar:hover {
+    background-color: #35701e; /* Cor de fundo do botão quando o mouse está sobre ele */
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Alinha os itens ao centro */
+    gap: 15px; /* Adiciona um espaço entre os botões */
+    width: 66%;
+}
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 450px; /* Aumenta a largura */
+    height: 70px; /* Aumenta a altura */
+    background-color: #f2f2f2; /* Cor de fundo dos campos de entrada */
+    border-width: 1px; /* Espessura da borda dos campos de entrada */
+    border: #DEDEDE;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+form a, .botao-entrar{
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px; /* Aumenta a largura */
+    height: 50px; /* Aumenta a altura */
+    font-size: 20px;
+    padding: 10px
+    
+}
+
+#logo {
+    background-image: url('../img/Denuncieaqui.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px; /* Ajuste para o tamanho desejado */
+    height: 100px; /* Ajuste para o tamanho desejado */
+}
+
+#titulo {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #4CAF50; /* Cor do texto */
+    margin-left: 10px; /* Espaço à esquerda do texto */
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+#titulo {
+    font-size: 50px; /* Tamanho da fonte */
+    color: #4CAF50; /* Cor do texto */
+    margin-left: 10px; /* Espaço à esquerda do texto */
+    
+}
+
+.denuncie {
+    color: #5ead93; /* Cor do texto para "Denuncie" */
+}
+
+.aqui {
+    color: #56e016; /* Cor do texto para "Aqui" */
+    font-weight: bold;
+}
+
+

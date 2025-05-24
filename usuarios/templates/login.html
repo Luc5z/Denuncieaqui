@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'usuarios/css/login.css' %}">
+{% endblock 'head' %}
+
+{% block 'body' %}
+
+
+<div class="main" style="position: ;">
+    <form action="{% url 'usuarios:login' %}" method="POST">
+                <div class="header" style="">
+                    <div id="logo"></div>
+                    <span id="titulo"><span class="denuncie">DENUNCIE</span><span class="aqui">AQUI</span></span>
+                </div> <br>
+                        {% if messages %}
+                            {% for message in messages %}
+                                {% if message.tags == 'error' %}
+                                    <section class="alert alert-danger">
+                                        {{ message }}
+                                    </section>
+                                {% else %}
+                                    <section class="alert alert-success">
+                                        {{ message }}
+                                    </section>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                
+
+                    {% csrf_token %}
+                <input id="email" type="text" placeholder="E-mail" name="email">
+                <input id="senha" type="password" placeholder="Senha" name="senha">
+                <br>
+                <div class="button-group">
+                    <input class="botao-entrar" type="submit" value="Entrar">
+                    <a class="botao-criar" href='{% url 'usuarios:cadastro' %}'>Criar conta</a>
+
+                </div>
+    </form>
+</div>
+
+
+{% endblock 'body' %}
+
